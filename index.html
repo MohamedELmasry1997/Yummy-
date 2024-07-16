@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/f0c3ec821f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Yummy!</title>
+  </head>
+  <body class="bg-dark">
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <header>
+      <div class="d-flex position-fixed min-vh-100 top-0 sideNav">
+        <div class="navContnet bg-dark py-5 ps-3 text-light">
+          <a href="#" id="search"><p class="my-4">Search</p></a>
+          <a href="#"><p id="categories" class="my-4">Categories</p></a>
+          <a href="#"><p class="my-4" id="area">Area</p></a>
+          <a href="#"><p class="my-4" id="ingredients">Ingredients</p></a>
+          <a href="#"><p class="my-4" id="contactUs">Contact Us</p></a>
+
+          <div class="cnt-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p class="lead">Copyright Â© 2019 All RightsReserved.</p>
+        </div>
+
+        <div class="nav-header bg-light d-flex flex-column">
+          <img src="./images/logo.png" alt="logo" id="logo" />
+          <div class="nav-icons">
+            <i class="fa-solid fs-3 fa-bars"></i>
+
+            <i class="fa-solid fs-4 fa-globe"></i> <br />
+            <i class="fa-solid fs-4 fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row" id="rowData"></div>
+
+        <div class="container">
+          <div class="row" id="itemsContentRow"></div>
+        </div>
+        <!-- search -->
+        <div id="searchInputs">
+          <div class="container">
+            <div class="row py-5" id="searchRow">
+              <div class="col-md-6 d-flex justify-content-center">
+                <input
+                  type="text"
+                  placeholder="search by meal name"
+                  class="form-control w-75"
+                  id="searchName"
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  placeholder="search by first letter"
+                  class="form-control w-75"
+                  id="searchFirLetter"
+                />
+              </div>
+            </div>
+            <div class="row" id="searchResult"></div>
+          </div>
+        </div>
+
+        <!-- categories -->
+        <div class="container">
+          <div class="row py-5" id="categoryRow">
+            <div class="col-md-4 categoryItem">
+              <img src="./images/1.jpg" alt="" />
+              <div
+                class="layer text-center d-flex justify-content-center flex-column"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- area -->
+        <div class="container">
+          <div class="row text-light" id="areaRow"></div>
+          <div class="row" id="clickMeal"></div>
+        </div>
+
+        <!-- ingredient -->
+        <div class="container">
+          <div class="row" id="ingredientRow"></div>
+
+          <div class="row" id="innerIngredeint">
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row" id="lastRow"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
